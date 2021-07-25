@@ -1,4 +1,4 @@
-#WaLLE
+
 import discord
 from discord.ext import commands,tasks
 import os
@@ -57,9 +57,9 @@ class YTDLSource(discord.PCMVolumeTransformer):
 @bot.command(name='play_song', help='To play song')
 async def play(ctx,url):
     
-    if not ctx.message.author.name=="Rohan Krishna" :
-         await ctx.send('NOT AUTHORISED!')
-         return
+   # if not ctx.message.author.name=="WALI" :
+    #     await ctx.send('NOT AUTHORISED!')
+     #    return
     try :
         server = ctx.message.guild
         voice_channel = server.voice_client
@@ -173,7 +173,7 @@ async def on_member_join(member):
 
 @bot.command()
 async def tell_me_about_yourself(ctx):
-    text = "My name is WallE!\n I was built by Kakarot2000. At present I have limited features(find out more by typing !help)\n :)"
+    text = "Hi i am wali khan fuck you all"
     await ctx.send(text)
 
 @bot.event
